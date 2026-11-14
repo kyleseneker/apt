@@ -1,0 +1,49 @@
+name: publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  nut:
+    runs-on: ubuntu-latest
+    container: debian:trixie
+    permissions:
+      contents: write
+    steps:
+      - run: apt-get update && apt-get install -y --no-install-recommends apt-utils ca-certificates git gnupg
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: gh-pages
+          path: site
+      - id: check
+        run: |
+          . packages/nut/version.env
+          version="$(echo "${NUT_DEBIAN_VERSION}${LOCAL_REVISION}" | tr '~+' '-.')"
+          if [ -e "site/pool/main/n/nut/nut-server_${version}_amd64.deb" ]; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.check.outputs.published != 'true' || github.event_name == 'pull_request'
+        run: bash packages/nut/build.sh dist
+      - if: steps.check.outputs.published != 'true' && github.event_name != 'pull_request'
+        env:
+          APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
+        run: bash scripts/update-repo.sh dist site
+      - if: steps.check.outputs.published != 'true' && github.event_name != 'pull_request'
+        working-directory: site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish nut $(dpkg-deb --field ../dist/nut-server_*_amd64.deb Version)"
+          git push origin HEAD:gh-pages
