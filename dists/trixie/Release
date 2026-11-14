@@ -1,19 +1,23 @@
 Architectures: amd64
 Codename: trixie
 Components: main
-Date: Sat, 14 Nov 2026 21:28:14 +0000
+Date: Sat, 14 Nov 2026 21:50:21 +0000
 Label: kyleseneker
 Origin: kyleseneker
 Suite: trixie
 MD5Sum:
- f8a1ed7ee639ef222d40d91ad5a74de3            23048 main/binary-amd64/Packages
- bf7b00e192ae0babf9c0cf6bda0b23ec             5856 main/binary-amd64/Packages.gz
+ 7753c80f42b76b13ac12322d938ace06             1084 Release
+ 2981e511bd296f4a4e80ccf2375ef437            46096 main/binary-amd64/Packages
+ 4b4536fc5c9f0428a7f3e35afbcae2f2             9715 main/binary-amd64/Packages.gz
 SHA1:
- d0434f2c927ef309b29b54ecd3489fe4491ab048            23048 main/binary-amd64/Packages
- faa0acead2e6b9ab047bb9fa7e1dd85d1dcbaab9             5856 main/binary-amd64/Packages.gz
+ d98f26dc00380362534d6d1715573e8361b23e24             1084 Release
+ 91f9ff9b874f205e9a6422ddc1708b1ced2d686b            46096 main/binary-amd64/Packages
+ cb294cf6f631a4cc8fc7641b9e1ad36752919c58             9715 main/binary-amd64/Packages.gz
 SHA256:
- 829a31e040014d738463e55d4125e5c6be487d4175b9e8e924c809332446797d            23048 main/binary-amd64/Packages
- 7d0c22c800a0ecc6d6366409263acc8f8461cf7e4114121241c41d329bd08163             5856 main/binary-amd64/Packages.gz
+ 07caa95d524e0b9ce7fce9b939c923b5220347981b8c69c1cd1088518457087d             1084 Release
+ 4dfddff88074c77d8092c6cf29264815cd726f2f9d34724fd57d539bcfc12873            46096 main/binary-amd64/Packages
+ d0a1498a2e4bd9cbad2ac7858d1e33beac1f8fd9b579dcf45ee7cd4dae3a04e4             9715 main/binary-amd64/Packages.gz
 SHA512:
- 1ce048d4a80201b41a5a702c7f2fb5f9ebb83555bd851ebc762815c99cdab0a6dcc170c38d16cf598464c613761f70031e159595381de0ad9cceffb76b125437            23048 main/binary-amd64/Packages
- 2dfd2a6dab41ac01c8866c1ea3374e4bc6736aa3a6c8306c2cd9f5920953bd9051a264df543a2b312b640ecb2556d8a4f3ae7fb041e3cc9ba1081a90b654dce2             5856 main/binary-amd64/Packages.gz
+ b99a01e3d284b504926ebd7f88ef6bc7909ec48b1a00bad0fac8860a270c104ea86d7a375bea051e5443a8a160e2e9b4ebdb6b944a3d47a6d01fa0acaf90d451             1084 Release
+ f8bd36c6b1f38c786a1ab7714b2f9163aafd66128a15bde176d1dadac93acf4ae5d9aa62c7ff31446449a335b6e0f47a1c16611502d43c213011895686df0c6b            46096 main/binary-amd64/Packages
+ 53cd6a2984071e82e049c2d6faf5d34808186f3d99a170253e644c64d0d9727c383a8bc02a02839da4bbd57afd5735a656acf7b99f5efb4865be26bad769ba33             9715 main/binary-amd64/Packages.gz

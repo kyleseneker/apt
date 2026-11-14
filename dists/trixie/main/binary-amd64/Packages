@@ -24,6 +24,32 @@ Description: network UPS tools - development files for the new client library
  .
  This package provides the development files for the new client library.
 
+Package: libnutclient-dev
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1317
+Depends: libnutclient2t64 (= 2.8.5-1~homelab13+2)
+Filename: pool/main/n/nut/libnutclient-dev_2.8.5-1-homelab13.2_amd64.deb
+Size: 809444
+MD5sum: 4341d68304f0194b1f5588e05930d932
+SHA1: f8705d27ae93f82f9623db9ee7a5bc027b032df1
+SHA256: 126da8701585728ebce11025a23fc8814d735bc3d0ce49b31913a710d2611474
+SHA512: a6f7eb197a2361c611777345cb0f622238483024142fa99c8c97674f2a1bfbe69eca5afe82431f9b78c0b33548674ab75d739730472e39cae69fb3e2c454f62b
+Homepage: https://networkupstools.org/
+Description: network UPS tools - development files for the new client library
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides the development files for the new client library.
+
 Package: libnutclient2t64
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -42,6 +68,34 @@ MD5sum: 703cf5b852f599970ce78e0f61a93a02
 SHA1: 7619905edca441a7714bfed72e12905d00d69f22
 SHA256: 73701f12ab9f354c80af9d105d0f7534912e22eac7ef85ebadee71006ac92b02
 SHA512: 58b0509c5575ad3d2794a8e7bab36d0c16a0e2f86b81739d30a03a22f5ddb615be6a79d27603fbbe43b0a10f490a310aa50a2f1cc9b1c6f3db2c8aa49cd529af
+Homepage: https://networkupstools.org/
+Description: network UPS tools - new client library
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides the new shared client library.
+
+Package: libnutclient2t64
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1002
+Provides: libnutclient2 (= 2.8.5-1~homelab13+2)
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Conflicts: libnutclient2
+Filename: pool/main/n/nut/libnutclient2t64_2.8.5-1-homelab13.2_amd64.deb
+Size: 794060
+MD5sum: c33e3149efd4f0cdebcccb9993bfcd32
+SHA1: 9a5e579c0d51286b8ef05b93a69925db77bde9f7
+SHA256: f40d7f6e06d05e179a7e344abecd6ae928edd667f4ab962640ed143a2748aa56
+SHA512: e48d95ffd0cee860c3b4dd9bf884116934bf9852c732a5afcff36487cecf72c834cb5d18cbbc84b9cd3ab0c86b1c890567516c4fc7157aa7350f02a89388cf38
 Homepage: https://networkupstools.org/
 Description: network UPS tools - new client library
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -79,6 +133,33 @@ Description: network UPS tools - development files for the scanner library
  .
  This package provides the development files for the scanner library.
 
+Package: libnutscan-dev
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1155
+Depends: libnutscan4 (= 2.8.5-1~homelab13+2)
+Conflicts: libnutscan2
+Filename: pool/main/n/nut/libnutscan-dev_2.8.5-1-homelab13.2_amd64.deb
+Size: 821156
+MD5sum: 350673516e17c30a44c53b4f3cb1ae94
+SHA1: 309952adaba519eb4ba540e9b5fe5326eb69bdbe
+SHA256: d7599a200d45f9d5edace9aa4fbdc268051d6c72e22c7a57b42384c51a4d616d
+SHA512: 459513bf9cf1c882e4dd12a4009ffb6e62e1347a5ac7283b19dffed34b822247b55ca9b10abdd53f6bdd7f6956a198c0ad107b599292f8d9c4f24edd32396507
+Homepage: https://networkupstools.org/
+Description: network UPS tools - development files for the scanner library
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides the development files for the scanner library.
+
 Package: libnutscan4
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -95,6 +176,32 @@ MD5sum: f6f03792963d4e5b1f032f3aea791483
 SHA1: 6ac77e671c85f929db415d473aab020a35f62c7a
 SHA256: e1b85dcb232f3bf687bf811ed5671d22ed38e40caa16d641ac8f6e5c88b2fe88
 SHA512: a086c404dcf7dfe88b8dc37b4bdfe34623fb7fcbd1efd130ac050ea521eae27dbef1badb33bdfbbeb4d973c447c2de5df4a758f164cab198e690f843682167b9
+Homepage: https://networkupstools.org/
+Description: network UPS tools - scanner library
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides the shared scanner library.
+
+Package: libnutscan4
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 889
+Depends: libc6 (>= 2.38), libltdl7 (>= 2.5.4)
+Filename: pool/main/n/nut/libnutscan4_2.8.5-1-homelab13.2_amd64.deb
+Size: 771132
+MD5sum: 75a1c83f41a9ac6a7de85483c1126c52
+SHA1: f8f2f14eddaf1ca602eae00015df7ab3013165b1
+SHA256: b44f07522e54f828c283e0de1acdf6e1c680a1720363f13e52092b8884d6b4e0
+SHA512: f6265d78d88fccd0d9539543722473ccca94221cfc9d13d3d303751d21d00eebabcd9d30c85d8b2e73354c14dc2a830cc6c07be35380e5d31d22d56ea7af3175
 Homepage: https://networkupstools.org/
 Description: network UPS tools - scanner library
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -131,6 +238,32 @@ Description: network UPS tools - Perl bindings for NUT server
  .
  This package provides Perl bindings to connect to NUT server.
 
+Package: libups-nut-perl
+Architecture: all
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: foreign
+Priority: optional
+Section: perl
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 727
+Depends: perl:any
+Filename: pool/main/n/nut/libups-nut-perl_2.8.5-1-homelab13.2_all.deb
+Size: 713872
+MD5sum: a63f311adb137e5132b9ddd946e56e51
+SHA1: c1e78a781cc74767985eaa26c9ff31427c4d6772
+SHA256: 47ac4bef5f6c70363c8fad04ae286819d3c0c42346bfff5483dcedb8b9b3ac23
+SHA512: 62527a1851417f5d333beb370a551b37db8e1ac5c98937a6e3197ddf56d6fc6b6316eb3f0662de008c74dd78267084ccc02ede40f4bf7195f0f2cfc3569ed13f
+Homepage: https://networkupstools.org/
+Description: network UPS tools - Perl bindings for NUT server
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides Perl bindings to connect to NUT server.
+
 Package: libupsclient-dev
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -147,6 +280,32 @@ MD5sum: 4426246f7688cbcfcfc93a07babb6c9e
 SHA1: 24c92db5199111e348b369ee717f676bedbcb277
 SHA256: e126ecebd53ffcd9d570b2555ad0ff767064b868dfe90c43ade3f5646c180924
 SHA512: 8e3aed4a075df0b01907c83ea37894bdb18d1640cca845002d05adc85c63057319e4f3f817d6d8c7b7dff2d13fec00af2629a75fa9935a27e918048a78ebeb6c
+Homepage: https://networkupstools.org/
+Description: network UPS tools - development files
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides the development files.
+
+Package: libupsclient-dev
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 971
+Depends: libnss3-dev, libupsclient7 (= 2.8.5-1~homelab13+2)
+Filename: pool/main/n/nut/libupsclient-dev_2.8.5-1-homelab13.2_amd64.deb
+Size: 788416
+MD5sum: cac4ed737696898c8014f028d56d6134
+SHA1: 30d3e0134a02cacc03b6ef998db078ef9bf8be57
+SHA256: 4558e23b0f13ba6e8923c44631cf7b65da19b88852e4ab3dc2c10f363794fecd
+SHA512: 5f5762ac0ac60cde6bc613bb9e1552f44558dbaf9a985a7f2c2e8f37c26a3c11cfd711033fed7cf5f9cf5d08a54fa3256555e2a8c5e59ac0c734c0327fddd400
 Homepage: https://networkupstools.org/
 Description: network UPS tools - development files
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -183,6 +342,32 @@ Description: network UPS tools - client library
  .
  This package provides the shared client library.
 
+Package: libupsclient7
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 820
+Depends: libc6 (>= 2.38), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.13.4-2~)
+Filename: pool/main/n/nut/libupsclient7_2.8.5-1-homelab13.2_amd64.deb
+Size: 746816
+MD5sum: ebe8964ef6c993aaeeb0aed240d477ce
+SHA1: 01a8bf68a59a27c890892f98c2432f4edcfd496b
+SHA256: 9fcd6bb7c2c1d9e70fc2ba9abe957b4f76821b2cf988a541612543330d28993d
+SHA512: 87d0ad36c9106d8259897acea92ba24da6124132eafa564f7d3dcbfa39777df84e006bb934829c364539e0d741fcfbb4ddb27d4d3e7fef0b7f71566260e8d973
+Homepage: https://networkupstools.org/
+Description: network UPS tools - client library
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides the shared client library.
+
 Package: nut-cgi
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -200,6 +385,34 @@ MD5sum: 6beb60ff37e09ffed6a8f7c25fcb16e2
 SHA1: 55125559b50b3975f872ee96512c685bae969ee9
 SHA256: 471b8eda781e5a8cc39d4adef583732b681bc68161bc5845fa7ba70fdacefba0
 SHA512: 435cfc6b57d80798f40ae80609b1bb834fc4ec6720821095de400c5144cf0515ce952061b801a24b30bfa351adb6bed77ef1bda717a1ec3e126c615b4238633d
+Homepage: https://networkupstools.org/
+Description: network UPS tools - web interface
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides an HTTP interface for Network UPS Tools which makes
+ it possible to monitor the core NUT system with a web browser.
+
+Package: nut-cgi
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1133
+Depends: adduser, libc6 (>= 2.38), libgd3 (>= 2.1.0~alpha~), libupsclient7 (>= 2.8.5)
+Recommends: apache2 | httpd-cgi
+Suggests: nut
+Filename: pool/main/n/nut/nut-cgi_2.8.5-1-homelab13.2_amd64.deb
+Size: 810952
+MD5sum: b786b407d21dc6332a411ba77422f040
+SHA1: 7a00bff894ad51cebfcea6e0497e9756ff193b24
+SHA256: 04db74054d28e171ad94be1656d3f3c5ff20744068c225aa4f3cba00413331ed
+SHA512: 64bece790eca71a59f624add84496a27902880cfa1633854f14c6a14b9763e65a7456392239943892ee18424f3a13954eddedfe060526299ec226acb67194ae9
 Homepage: https://networkupstools.org/
 Description: network UPS tools - web interface
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -244,6 +457,39 @@ Description: network UPS tools - clients
  This package provides NUT's clients that allows the user to control
  and monitor the UPS.
 
+Package: nut-client
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1943
+Provides: ups-monitor
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, libc6 (>= 2.38), libgcc-s1 (>= 3.0), libnutscan4 (>= 2.8.5), libstdc++6 (>= 13.1), libsystemd0 (>= 246), libupsclient7 (>= 2.8.5)
+Recommends: bash-completion
+Suggests: nut-monitor
+Conflicts: ups-monitor
+Breaks: nut-server (<< 2.8.3-1~)
+Replaces: nut-server (<< 2.8.3-1~), ups-monitor
+Filename: pool/main/n/nut/nut-client_2.8.5-1-homelab13.2_amd64.deb
+Size: 1030172
+MD5sum: 54ba4730a2637e6ba8bc0742697f094c
+SHA1: 03bff2bdbb9180001bbbff58d6c978028a2d7cc6
+SHA256: dfe5c08c4c51290969f5c041aad61453ce763994bc5b3434ab303af91204f917
+SHA512: 6caba19797594866fed4ea1b123520597a8e0cfc69d38190c8b6f244f22710d08b09c0b642985dbd6b10506a76ba1df32190c0a247236f2a447ac9f41328210c
+Homepage: https://networkupstools.org/
+Description: network UPS tools - clients
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides NUT's clients that allows the user to control
+ and monitor the UPS.
+
 Package: nut-doc
 Architecture: all
 Version: 2.8.5-1~homelab13+1
@@ -260,6 +506,32 @@ MD5sum: 007c9cc7f2a59d06bc91dfa501a7888a
 SHA1: e39728af9d96a321d90c4ad0ea4350bf69bf75aa
 SHA256: b1bd6cd0fadd3976f5eb32f419da5b275e3e6b36b687a160bd5a9adb8a7df8f9
 SHA512: df6cf80be60f4e6ee3e491e07aae00efca1921f5996511bafe7ac325f11c289acca752a6213879a281ccf94ba86921d69aede5c8265c8d96691f0fa08988999b
+Homepage: https://networkupstools.org/
+Description: network UPS tools - documentation
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package contains FAQ, user, developer and packager documentation.
+
+Package: nut-doc
+Architecture: all
+Version: 2.8.5-1~homelab13+2
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 15854
+Suggests: doc-base
+Filename: pool/main/n/nut/nut-doc_2.8.5-1-homelab13.2_all.deb
+Size: 7043564
+MD5sum: 33b55acc3997298f20c0a26b835a98df
+SHA1: c219c01944b5de6493745eda7042d247f1487fdf
+SHA256: c2805c4ab96de5b4d401e74bf11a11a4ed4681dfcf16e2f71a72237472f2ed6d
+SHA512: 62eea21c9db999c2b4da165c1aebe846a2552d47968f041e5efbde01e310662788642b25fa176dcc3a49983405bc17dbc2f93f87eb4a536f19df93792455451c
 Homepage: https://networkupstools.org/
 Description: network UPS tools - documentation
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -297,6 +569,33 @@ Description: network UPS tools - I2C driver
  This package provides nut-i2c, a collection of drivers for UPS systems
  with I2C-based communication protocols.
 
+Package: nut-i2c
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1274
+Depends: nut-server (= 2.8.5-1~homelab13+2), libc6 (>= 2.38), libi2c0 (>= 4.0), libsystemd0 (>= 246)
+Conflicts: nut-server (<< 2.8.3-2~)
+Filename: pool/main/n/nut/nut-i2c_2.8.5-1-homelab13.2_amd64.deb
+Size: 821584
+MD5sum: 4aad0496b41ffd3ef271b1eca0242f0c
+SHA1: f652fdd00b9e9775f30564a3a67512b513bc28a8
+SHA256: 9454c7c6cde77045cd8ec04e01c6fa2375d42ad51795c6fcbb5621cbc58cf7c3
+SHA512: a12b56003226e9b35113edfcaea275ee3c2241418abae2ae4dca0956ecc086fac097519895b65921f59e9defc940494a48464fe8e3ceb947aea4b2fd93d066c6
+Homepage: https://networkupstools.org/
+Description: network UPS tools - I2C driver
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides nut-i2c, a collection of drivers for UPS systems
+ with I2C-based communication protocols.
+
 Package: nut-ipmi
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -312,6 +611,33 @@ MD5sum: 4f2bc262a8f7cc054e473275869caff8
 SHA1: 6aca8ea6d2266f11ee7b730e3b19896108fa7d09
 SHA256: 67e12a088042b4752d19c753b8b663dc0e6071aa60a63aa57ef36d97b5729af1
 SHA512: bb7ffee8c33b1beeb536caea564a349848e0e35dbe3e9b9e6ef590e4f80686fc3a2308b6ca23f05ca6b0eefa8942791a25d1e291e274156b09ceafce3cda721d
+Homepage: https://networkupstools.org/
+Description: network UPS tools - IPMI driver
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package currently provides nut-ipmipsu, a driver which allows the user to
+ monitor IPMI power supply units (PSU) found in servers of popular brands, such
+ as Dell, HP, IBM. It adds an IPMI interface to the core NUT system.
+
+Package: nut-ipmi
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 911
+Depends: nut-server (= 2.8.5-1~homelab13+2), libc6 (>= 2.38), libfreeipmi17 (>= 1.4.4), libipmimonitoring6 (>= 1.1.5), libsystemd0 (>= 246)
+Filename: pool/main/n/nut/nut-ipmi_2.8.5-1-homelab13.2_amd64.deb
+Size: 785392
+MD5sum: c4c4bc38520eec8a9bab3dcc6a55b574
+SHA1: b90534b5cde69bd17840d6a92ebd482fdf4c3b60
+SHA256: fd0d202b60d66b184e828b0d126a917cfa87598358bc0e8c18bc23dbbd1d8325
+SHA512: 196a58541844adb90c5db64b072f175e1582e632c07520a610bde6071ecad1fd0a87dcc9308011d37f7a8bbf6c6dd464cf6cacc04e46eafa43cbb2a52693d06d
 Homepage: https://networkupstools.org/
 Description: network UPS tools - IPMI driver
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -352,6 +678,34 @@ Description: network UPS tools - Modbus driver
  This package provides nut-modbus, a collection of drivers for UPS systems
  with Modbus-based communication protocols.
 
+Package: nut-modbus
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 2128
+Depends: nut-server (= 2.8.5-1~homelab13+2), libc6 (>= 2.38), libmodbus5 (>= 3.0.2), libsystemd0 (>= 246)
+Breaks: nut-server (<< 2.8.1-2~)
+Replaces: nut-server (<< 2.8.1-2~)
+Filename: pool/main/n/nut/nut-modbus_2.8.5-1-homelab13.2_amd64.deb
+Size: 940888
+MD5sum: e05ed4d2277bf82bff752436caa7f0db
+SHA1: 4b5a105c0edab1c2353060ad985d218cd6bb6f8a
+SHA256: 2412451dd13af5a91aee45d060b2225fb9245de37a149d38fc57b7210d6f0f60
+SHA512: b2db3cf06e00d0c33aeed275d7f85bdd1fdc663de31ed5e6f8984db9f7d3a0f51d698d6555bae4bfed3417092e5e9d674ccb94fc3e19a80a4bc8c69b6723881c
+Homepage: https://networkupstools.org/
+Description: network UPS tools - Modbus driver
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides nut-modbus, a collection of drivers for UPS systems
+ with Modbus-based communication protocols.
+
 Package: nut-monitor
 Architecture: all
 Version: 2.8.5-1~homelab13+1
@@ -377,6 +731,31 @@ Description: network UPS tools - GUI application to monitor UPS status
  .
  This package provides nut-monitor, a GUI application to monitor UPS status.
 
+Package: nut-monitor
+Architecture: all
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 893
+Depends: python3-nut, python3-pyqt6, python3:any
+Filename: pool/main/n/nut/nut-monitor_2.8.5-1-homelab13.2_all.deb
+Size: 762048
+MD5sum: bf427221b85b64d084ffb296fa9aa913
+SHA1: 87d0952cc2a8a0cd3b56793fc4a7c4103906df6f
+SHA256: ba78ff96a0c66552863d95352fa1335167a971ac6198ad3d27f15e4bdf0c3c52
+SHA512: cd4486a377ad23c7d2310dfcdc2d15f64a072c43b249c77a73006f94316a188b666a6ab92cbe68119559608608fe62b29ede038a88af21cbe36d531d779bdb02
+Homepage: https://networkupstools.org/
+Description: network UPS tools - GUI application to monitor UPS status
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides nut-monitor, a GUI application to monitor UPS status.
+
 Package: nut-powerman-pdu
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -392,6 +771,32 @@ MD5sum: bab22ecaf393773111dd28e005efd718
 SHA1: 386bf2a55671bd7e59e8bad688170a286e57874d
 SHA256: f1c8b9afc25a8f183b1c79ceb1c90a1d4e1017a6d4df57211832f7de5dcd02d9
 SHA512: a7c86290818b015902c4ea7b8f027f9c73de7c1b2b4ec016c48ca982b8dcd1bf571deafe32216ce5fe59c730eabc61fa6ad6a018d39e109b6a77d3937f5f14a3
+Homepage: https://networkupstools.org/
+Description: network UPS tools - PowerMan PDU driver
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides powerman-pdu, which allows NUT clients to communicate
+ with the PowerMan daemon to support PDUs.
+
+Package: nut-powerman-pdu
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 886
+Depends: nut-server (= 2.8.5-1~homelab13+2), powerman, libc6 (>= 2.38), libpowerman0 (>= 2.4.4), libsystemd0 (>= 246)
+Filename: pool/main/n/nut/nut-powerman-pdu_2.8.5-1-homelab13.2_amd64.deb
+Size: 780220
+MD5sum: cbd7c6f8e718b31a353b64031abbc367
+SHA1: 208d6eec1bc359c922dd974bf4b1c4402e018d31
+SHA256: 258051146f4fe3788488a31c920bc1c17e6eb542da2eecac8a258c8f7401ad9d
+SHA512: ea3253ec2fd0d86037d787c2f735ccff46ad59064ea391560981ebd5f02add595a84057f4b5076e0923f654a1342757630afa494b73bc9c7ccb8036104741e54
 Homepage: https://networkupstools.org/
 Description: network UPS tools - PowerMan PDU driver
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -431,6 +836,34 @@ Description: network UPS tools - core system
  This package provides NUT's core system, and the serial and USB UPS
  drivers.
 
+Package: nut-server
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 15664
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, nut-client (= 2.8.5-1~homelab13+2), udev, libc6 (>= 2.38), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.14), libnutscan4 (>= 2.8.5), libsystemd0 (>= 246), libupsclient7 (>= 2.8.5), libusb-1.0-0 (>= 2:1.0.16)
+Suggests: nut-cgi, nut-i2c, nut-ipmi, nut-modbus, nut-snmp, nut-xml
+Filename: pool/main/n/nut/nut-server_2.8.5-1-homelab13.2_amd64.deb
+Size: 2429716
+MD5sum: b72d022fc6594ee16d8979aa3bad7b2c
+SHA1: aa7c3ea7948f7c3e534a6819b5358576580994db
+SHA256: 2a568fa32eed65f36a6b929dc96d23e939f323a621da85fb729e42514dd6be98
+SHA512: f2c382860d6c45a8753728761a5d2e1d2fd7a66a1aa3f83239c9bc90e7d7d646960b1680f1246850334bc4064243d0ea1634a64b0048c84c2909c0014bc634c7
+Homepage: https://networkupstools.org/
+Description: network UPS tools - core system
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides NUT's core system, and the serial and USB UPS
+ drivers.
+
 Package: nut-snmp
 Architecture: amd64
 Version: 2.8.5-1~homelab13+1
@@ -446,6 +879,33 @@ MD5sum: 793914a43446e142191804e896635174
 SHA1: befeefa2c2ffcfe16419265827fed9c858dfe2ce
 SHA256: ec9d9777f41d7d8728ffee164a8205fd7622b1160aaa55ac7ae54e057e5dfb0f
 SHA512: b1268c294bfef0e88ac3f510513f34f5c7f89aa8c208241e6b9eb6436894f16b30d791fbab1f4e2b947ee15c0f4b745f4400ad1af3979b0fd4c7d049407614c4
+Homepage: https://networkupstools.org/
+Description: network UPS tools - SNMP driver
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides snmp-ups, the SNMP multi-MIB driver for UPS, which
+ supports various MIBs including IETF, MGE, and APC. It adds an SNMP
+ Manager interface to the core NUT system.
+
+Package: nut-snmp
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 1294
+Depends: nut-server (= 2.8.5-1~homelab13+2), libc6 (>= 2.38), libsnmp40t64 (>= 5.9.4+dfsg), libsystemd0 (>= 246)
+Filename: pool/main/n/nut/nut-snmp_2.8.5-1-homelab13.2_amd64.deb
+Size: 837772
+MD5sum: 67534d300fbc2ed64ff86a3589ac1844
+SHA1: d6568186a2224edbb5b3bc0ad014290c266631fa
+SHA256: 6cd8b7fa6828f094103a73c6e7b518809e9a1833e5bd94cbe28d6e5542072739
+SHA512: db3e3b34042b1a504b5f972cdfccdae699a23db1f8e6033e6be3f9ffcc0c9037086294afe734c2e21bf32c0e40cd4cc4b0adcefc2a59b4564f4d86b730294346
 Homepage: https://networkupstools.org/
 Description: network UPS tools - SNMP driver
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -485,6 +945,33 @@ Description: network UPS tools - XML/HTTP driver
  Eaton or MGE that use an XML/HTTP-based Network Management Card or
  Proxy.
 
+Package: nut-xml
+Architecture: amd64
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: admin
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 950
+Depends: nut-server (= 2.8.5-1~homelab13+2), libc6 (>= 2.38), libneon27t64-gnutls, libsystemd0 (>= 246)
+Filename: pool/main/n/nut/nut-xml_2.8.5-1-homelab13.2_amd64.deb
+Size: 795060
+MD5sum: 95027444d5704bcd12d5a323c04d682b
+SHA1: 4f91933ad550c62acd0415ddd0fefe8bb355f2f1
+SHA256: af9082ebb7f32e4f2d06653c2d9cccc3f157a3b35c27641918c07d7fbae91639
+SHA512: b9fbd5f9416cab1d69c0d47c35f8bb0a6cfb4a43e84fce3a902856e46b68a59fb4c66cbd26c09210ebac29063330c5a128a8c4375ca7d7e0e133811bf7df5c74
+Homepage: https://networkupstools.org/
+Description: network UPS tools - XML/HTTP driver
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides netxml-ups, which supports UPS models from
+ Eaton or MGE that use an XML/HTTP-based Network Management Card or
+ Proxy.
+
 Package: nut
 Architecture: all
 Version: 2.8.5-1~homelab13+1
@@ -499,6 +986,31 @@ MD5sum: c33d6db8ec3449a955ec76c2a2039459
 SHA1: 43be2bed248751423e8ba1344e9ea4d1a5256e3c
 SHA256: 779b2e557d72ed51c39061601b5b045256a1d124e97e98b9f9c619b3bc968949
 SHA512: f0f11acefd89abe87091b27cbf54e106260992ab04f2f9dbaf94e143a22668269bedaa3ed9a8a1aedf5b057b4da62b3203f3578137fd17476039f77a3ecbc654
+Homepage: https://networkupstools.org/
+Description: network UPS tools - metapackage
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package is a metapackage that installs both nut-server and nut-client,
+ in most cases it is sufficient for a basic UPS monitoring system.
+
+Package: nut
+Architecture: all
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: metapackages
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 705
+Depends: nut-client, nut-server
+Filename: pool/main/n/nut/nut_2.8.5-1-homelab13.2_all.deb
+Size: 709720
+MD5sum: acce8e492fc9a70841f23c21c51e8e4b
+SHA1: 60a0d59e6913c4729aae62e2228ac81631993835
+SHA256: 9952a44c6446fa59d621f5db64f22b3e12c4f9ea0b2dd1c32e0ccf465d9d5463
+SHA512: a7395969b47f0fd28343fb0cd9cec08b897dcb5ca74de0bbca751274abe11be6153d93258f527a4450406d5055677ac0305a4afdcc6b6d2485be8dfac467bb24
 Homepage: https://networkupstools.org/
 Description: network UPS tools - metapackage
  Network UPS Tools (NUT) is a client/server monitoring system that
@@ -525,6 +1037,31 @@ MD5sum: 88a2c00fa64eb8a4336a0a885a5e4a2f
 SHA1: 0d52e618009850a7bacacf26b18ed704cd893888
 SHA256: 566c241c47b85ead01aa94d30abd575bf1989dff382e1e0119f67bd26a2a9552
 SHA512: 8bbfad5efd3f14fc33e1237711dcd68e78ec0102382a63b1bc468121f27124b47221491d4d17b5e34c390b517adfeb5fe1a2a25ce7f37a00b821a1d1b410d2ca
+Homepage: https://networkupstools.org/
+Description: network UPS tools - Python3 bindings for NUT server
+ Network UPS Tools (NUT) is a client/server monitoring system that
+ allows computers to share uninterruptible power supply (UPS) and
+ power distribution unit (PDU) hardware. Clients access the hardware
+ through the server, and are notified whenever the power status
+ changes.
+ .
+ This package provides Python3 bindings to connect to NUT server.
+
+Package: python3-nut
+Architecture: all
+Version: 2.8.5-1~homelab13+2
+Priority: optional
+Section: python
+Source: nut
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Installed-Size: 727
+Depends: python3:any
+Filename: pool/main/n/nut/python3-nut_2.8.5-1-homelab13.2_all.deb
+Size: 712996
+MD5sum: 73f2463e3ee5d229295101e0bdfc333c
+SHA1: 3cc66c816cd534f575ab075545e36a2d28b4d086
+SHA256: 53d1f3d0119733023f5b0dc8c3a93473e86e55d3d2c123c25c6ea018390d02c6
+SHA512: 22c977c820d0c15cb8c4c37f0d9db8ffcc622b350e1ebbad4a570b58623e59ce5290ed3e155d1ebb39c6a97ec5e9bf7ce4f1fb219aba4242294764b10136cb06
 Homepage: https://networkupstools.org/
 Description: network UPS tools - Python3 bindings for NUT server
  Network UPS Tools (NUT) is a client/server monitoring system that
