@@ -6,7 +6,7 @@ A signed APT repository for Debian packages rebuilt for
 
 | Package | Version | Suite | Reason |
 |---------|---------|-------|--------|
-| `nut` | `2.8.5-1~homelab13+1` | trixie, amd64 | Debian's 2.8.5-1 rebuilt for trixie. 2.8.5 stops `usbhid-ups` reconnecting on transient USB I/O errors ([homelab ADR-031](https://github.com/kyleseneker/homelab/blob/main/docs/decisions/031-nut-backport.md)). |
+| `nut` | `2.8.5-1~homelab13+2` | trixie, amd64 | Debian's 2.8.5-1 rebuilt for trixie. 2.8.5 stops `usbhid-ups` reconnecting on transient USB I/O errors ([homelab ADR-031](https://github.com/kyleseneker/homelab/blob/main/docs/decisions/031-nut-backport.md)). Carries upstream [edc06fb](https://github.com/networkupstools/nut/commit/edc06fb39435b892d5daeec53cb4845cb12d1d50), which stops 2.8.5 accepting a truncated report descriptor. |
 
 ## Usage
 
@@ -46,7 +46,9 @@ Pin-Priority: 500
 
 - `packages/<name>/build.sh` rebuilds a Debian source package in a `debian:trixie`
   container. `dget` verifies the source package's signature against the Debian keyring.
-  `version.env` sets the Debian version and the local revision.
+  `version.env` sets the Debian version and the local revision. Upstream fixes that are
+  not released yet go in `packages/<name>/patches/` and are added to the Debian patch
+  series.
 - A push to `main` builds any package whose version is not published yet.
   `scripts/update-repo.sh` adds it to `pool/`, regenerates the indexes and signs
   `InRelease` and `Release.gpg`. The workflow commits the result to `gh-pages`.

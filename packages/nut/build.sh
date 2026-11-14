@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+here="$(cd "$(dirname "$0")" && pwd)"
 # shellcheck source=packages/nut/version.env
-. "$(dirname "$0")/version.env"
+. "$here/version.env"
 OUT="$(realpath -m "${1:-dist}")"
 
 export DEBIAN_FRONTEND=noninteractive
@@ -20,6 +21,12 @@ cd "nut-${NUT_DEBIAN_VERSION%-*}"
 
 dch --force-bad-version --newversion "${NUT_DEBIAN_VERSION}${LOCAL_REVISION}" --distribution trixie --force-distribution \
   "Rebuild of Debian ${NUT_DEBIAN_VERSION} for trixie."
+for patch in "$here"/patches/*.patch; do
+  [ -e "$patch" ] || continue
+  cp "$patch" debian/patches/
+  basename "$patch" >> debian/patches/series
+  dch --append "Apply $(sed -n 's/^Subject: //p' "$patch")"
+done
 mk-build-deps --install --remove --tool 'apt-get -y --no-install-recommends' debian/control
 dpkg-buildpackage -us -uc -b
 

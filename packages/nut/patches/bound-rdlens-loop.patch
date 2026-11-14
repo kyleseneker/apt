@@ -1,0 +1,46 @@
+From: John Grant <john.grant@dronedeploy.com>
+Subject: drivers/libusb{0,1}.c: bound rdlens loop by element count, not sizeof
+Origin: upstream, https://github.com/networkupstools/nut/commit/edc06fb39435b892d5daeec53cb4845cb12d1d50
+Bug: https://github.com/networkupstools/nut/issues/3136
+Last-Update: 2026-11-14
+---
+--- a/drivers/libusb0.c
++++ b/drivers/libusb0.c
+@@ -658,7 +658,7 @@
+ 				}
+ 			}
+ 
+-			for (j = 0; j < sizeof(rdlens); j++) {
++			for (j = 0; j < SIZEOF_ARRAY(rdlens); j++) {
+ 				rdlen = rdlens[j];
+ 				if (rdlen < 0)
+ 					continue;
+@@ -723,7 +723,7 @@
+ 				break;
+ 			}
+ 
+-			if (j >= sizeof(rdlens)) {
++			if (j >= SIZEOF_ARRAY(rdlens)) {
+ 				/* Ended the loop without success */
+ 				goto next_device;
+ 			}
+--- a/drivers/libusb1.c
++++ b/drivers/libusb1.c
+@@ -723,7 +723,7 @@
+ 			}
+ 		}
+ 
+-		for (j = 0; j < sizeof(rdlens); j++) {
++		for (j = 0; j < SIZEOF_ARRAY(rdlens); j++) {
+ 			rdlen = rdlens[j];
+ 			if (rdlen < 0)
+ 				continue;
+@@ -813,7 +813,7 @@
+ 			break;
+ 		}
+ 
+-		if (j >= sizeof(rdlens)) {
++		if (j >= SIZEOF_ARRAY(rdlens)) {
+ 			/* Ended the loop without success */
+ 			goto next_device;
+ 		}
