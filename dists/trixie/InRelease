@@ -1,0 +1,29 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: trixie
+Components: main
+Date: Sat, 14 Nov 2026 21:28:14 +0000
+Label: kyleseneker
+Origin: kyleseneker
+Suite: trixie
+MD5Sum:
+ f8a1ed7ee639ef222d40d91ad5a74de3            23048 main/binary-amd64/Packages
+ bf7b00e192ae0babf9c0cf6bda0b23ec             5856 main/binary-amd64/Packages.gz
+SHA1:
+ d0434f2c927ef309b29b54ecd3489fe4491ab048            23048 main/binary-amd64/Packages
+ faa0acead2e6b9ab047bb9fa7e1dd85d1dcbaab9             5856 main/binary-amd64/Packages.gz
+SHA256:
+ 829a31e040014d738463e55d4125e5c6be487d4175b9e8e924c809332446797d            23048 main/binary-amd64/Packages
+ 7d0c22c800a0ecc6d6366409263acc8f8461cf7e4114121241c41d329bd08163             5856 main/binary-amd64/Packages.gz
+SHA512:
+ 1ce048d4a80201b41a5a702c7f2fb5f9ebb83555bd851ebc762815c99cdab0a6dcc170c38d16cf598464c613761f70031e159595381de0ad9cceffb76b125437            23048 main/binary-amd64/Packages
+ 2dfd2a6dab41ac01c8866c1ea3374e4bc6736aa3a6c8306c2cd9f5920953bd9051a264df543a2b312b640ecb2556d8a4f3ae7fb041e3cc9ba1081a90b654dce2             5856 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSwQ9IJ3IaamKvSp+Kc0k0bM1LnawUCavjSbgAKCRCc0k0bM1Ln
+a041AQDxKNN1dG0YsmPcSQ6NbhzEvYOENa9E8fCdLzJtUPP5JgD8DNl6RRPrGn4J
+szLsk9rcViK0kQpkYiUWypEvwbMjnQY=
+=qRuH
+-----END PGP SIGNATURE-----
